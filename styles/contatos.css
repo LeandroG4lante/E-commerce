@@ -1,0 +1,80 @@
+/*.alinhamento{
+	margin: 0 80px;
+	background-color: yellow;
+}
+
+
+.cabecalho {
+    background-color: rgb(167, 162, 162);
+    
+}
+
+.logo{
+	border: 1px solid red;
+	display: inline-block;
+	width: 209.17px;
+	height: 44.83px;
+}
+
+.menu{
+	display: inline-block;
+
+}
+
+.menu li{
+	display: inline-block;
+	padding: 30px;
+	padding-right: 50px;
+	font-weight: bold;
+	color: #0000CD;
+	font-size: 0.8em;
+}
+
+*/
+
+.alinhamento{
+	margin: 0 80px;
+	background-color: yellow;
+}
+
+
+.cabecalho {
+    background-color: rgb(167, 162, 162);
+    
+}
+
+.logo{
+	border: 1px solid red;
+	display: inline-block;
+	width: 209.17px;
+	height: 44.83px;
+}
+
+.menu{
+	display: inline-block;
+
+}
+
+.menu li{
+	display: inline-block;
+	padding: 30px;
+	padding-right: 50px;
+	font-weight: bold;
+	color: #0000CD;
+	font-size: 0.8em;
+}
+
+.subcabecalho {
+	background-image: url("../imgs/capatel.jpg");
+	-webkit-text-stroke: 3px black;
+	align-items: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	height: 300px;
+	color: white;
+	font-size: 3rem;
+	
+}
+
