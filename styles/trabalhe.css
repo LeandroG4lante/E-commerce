@@ -1,91 +1,137 @@
-/*.alinhamento{
-	margin: 0 80px;
-	background-color: yellow;
+Formatação geral
+*{
+	margin: 0px 0px;	
 }
 
 
-.cabecalho {
-    background-color: rgb(167, 162, 162);
-    
+
+body{
+	background-color: #f2f5f7;
+	font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+	font-weight: 400;
 }
 
-.logo{
-	border: 1px solid red;
-	display: inline-block;
-	width: 209.17px;
-	height: 44.83px;
-}
-
-.menu{
-	display: inline-block;
-
-}
-
-.menu li{
-	display: inline-block;
-	padding: 30px;
-	padding-right: 50px;
-	font-weight: bold;
-	color: #0000CD;
-	font-size: 0.8em;
-}
-
-*/
-
-.alinhamento{
-	margin: 0 80px;
-	background-color: yellow;
-}
-
-
-.cabecalho {
-    background-color: rgb(167, 162, 162);
-    
-}
-
-.logo{
-	border: 1px solid red;
-	display: inline-block;
-	width: 209.17px;
-	height: 44.83px;
-}
-
-.menu{
-	display: inline-block;
-
-}
-
-.menu li{
-	display: inline-block;
-	padding: 30px;
-	padding-right: 50px;
-	font-weight: bold;
-	color: #0000CD;
-	font-size: 0.8em;
-}
-
-.info {
-	background-image: url("../imgs/capavenda.jpeg");
-	-webkit-text-stroke: 3px black;
-	align-items: left;
-	background-size: cover;
+.imagem-lateral{
+	margin: -10px 0px 0px -10px;
+	width: 450px;
+	height: 1000px;
+	float:left;
+	background-image: url(../imgs/imagem-lateral-04.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	display: flex;
-	height: 300px;
-	color: white;
-	font-size: 3rem;
-}
-.subinfo {
-	background-image: url("../imgs/subInfo.png");
-	-webkit-text-stroke: 3px black;
-	align-items: left;
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	display: flex;
-	height: 300px;
-	color: white;
-	font-size: 3rem;
-	
+}
+
+.cadastro{
+	width: 870px;
+	float: left;
+	text-align: center;
+}
+
+.conteudo-interno{
+	margin: 40px auto;
+	width: 600px;
+}
+
+
+
+.botoes{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.icone-google{
+	vertical-align:text-bottom;
+	margin-right: 8px;
+	width:2.8%;
+}
+
+.icones{
+	vertical-align:text-bottom;
+	margin-right: 8px;
+	width:5.8%;
+}
+
+.button-google{
+	cursor: pointer;
+	color:#0d3878;
+	border-color:#0d3878;
+	font-weight: 700;
+	border: 1px solid blue;
+	width: 100%;
+	height: 50px;
+	border-radius: 20px;
+}
+
+.botao-midia-social-01{
+	cursor: pointer;
+	color:#0d3878;
+	border-color:#0d3878;
+	font-weight: 700;
+	margin: 20px 20px 20px -5px;
+	border: 1px solid blue;
+	width: 280px;
+	height: 50px;
+	border-radius: 20px;
+}
+
+.botao-midia-social-02{
+	cursor: pointer;
+	color:#0d3878;
+	border-color:#0d3878;
+	font-weight: 700;
+	margin: 20px -5px 20px 20px;
+	border: 1px solid blue;
+	width: 280px;
+	height: 50px;
+	border-radius: 20px;
+}
+
+
+.nome-sobrenome{
+	width: 99%;
+	height: 35px;
+	margin-bottom: 20px;
+}
+
+.input-01{
+	margin: 20px 25px 20px -28px;
+	width: 270px;
+	height: 35px;
+
+}
+
+.input-02{
+	margin: 20px -27px 20px 20px;
+	width: 270px;
+	height: 35px;
+
+}
+
+.checkbox{
+	text-align: left;
+	margin:0px 10px 25px 0px;
+}
+
+.tamanho-checkbox{
+	height: 20px;
+	width: 20px;
+	margin-bottom:10px
+}
+
+
+.cadastre-se{
+	cursor:pointer;
+	font-weight: 600;
+	color:white;
+	background-color: #0d3878;
+	border-color: #0d3878;
+	font-size: 1.0em;
+	width: 70%;
+	border-radius: 20px;
+	height:50px;
+}
+
+footer{
+	clear: both;
 }
