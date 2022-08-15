@@ -4,24 +4,21 @@
 }
 
 body{
-	background-image: linear-gradient(to bottom, #ab49cc, #1e91ed, #4ca1f5);
+		margin:0;
+		padding:0;
+		width: 100%;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
 }
 /**/
 
 
 /*FORMATAÇÃO HEADER*/
-.cabecalho {
-    background-color: #EBEBEB;
-    height: 120px;
-}
 
-.alinhamento{
-	margin-top: 0px;
-	margin: 0 80px;
-	background-color: #EBEBEB;
-	border: 1px solid #EBEBEB;
+header{
+	background-color: #E6E6FA;
 }
-
 
 .logo{
 	border: 1px solid red;
@@ -30,7 +27,7 @@ body{
 	height: 44.83px;
 }
 
-.grupo-icones{
+/* .grupo-icones{
 	float: right;
 	width: 100px;
 }
@@ -41,15 +38,15 @@ body{
 	display: inline;
 	width: 30px;
 	height: 30px;
-}
+} */
 
-.compras{
+/* .compras{
 	margin: 15px 20px;
 	float: right;
 	cursor: pointer;
 	width: 40px;
 	height: 40px;
-}
+} */
 
 
 
@@ -86,26 +83,142 @@ ul{
 	color: #410287;
 }
 
-/*FORMATAÇÃO CORPO DO SITE*/
-.pos-cabecalho {
-	-webkit-text-stroke: 3px black;
-	align-items: left;
-	background-image: url("imgs/gamer.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	display: flex;
-	height: 300px;
-	color: white;
-	font-size: 3rem;
 
-  }
+
+
+/*FORMATAÇÃO CORPO DO SITE*/
+/*comeco antigo pos-cabecalho*/
+
+
+  /*final antigo pos cabecalho*/
+
+  /*Começo novo pós cabecalho*/
+  
+  .slider{
+    margin: 0 auto;
+    /* width: 800px; */
+    width: 1350px;
+    height: 400px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.slides{
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display:none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition:2s;
+}
+
+.imagens{
+    background-position: center;
+}
+
+.slide img{
+    /* width: 800px; */
+    width: 1500px;
+    /* border: 1px solid red; */
+    /*começo da configuração imagem*/
+    /*final configuração da imagem*/
+
+}
+
+.manual-navegacao{
+    position: absolute;
+    /* width: 800px; */
+    width: 1400px;
+    margin-top:-140px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border:2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right:40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navegacao div{
+    border: 2px solid #20a6ff;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacao{
+    position: absolute;
+    /* width: 800px; */
+    width: 1400px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegacao .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navegacao .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navegacao .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navegacao .auto-btn4{
+    background-color: #fff;
+}
+  /*Final novo pós cabecalho*/
 
   /*Formatação promoção*/
+.alinhamento{
+	margin: 0 auto;
+}
 
   .opcoes{
+	margin: 20px auto;
 	width: 980px;
-	margin: 20px 100px;
 	padding: 10px;
 	font-size: 15px;
 	font-weight: bold;
@@ -118,6 +231,7 @@ ul{
 	font-size: 20px;
 	padding: 20px;
 	font-style: italic;
+	text-align: justify-all;
 
 
 }
@@ -172,9 +286,9 @@ ul{
 
 /*Configuração do mapa*/
 .mapa-local{
-	width: 980px;
+	width: 100%;
 	height: 450px;
-	margin: 20px 100px;
+	margin: 20px auto;
 }
 
 /*Configuração produtos novos e lançamentos*/
@@ -183,8 +297,19 @@ ul{
 }
 
 .produtos-novos-lancamentos{
-	margin-bottom: 50px;
+	margin-right:20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 1px solid rgb(167, 162, 162);
+	border-radius: 20px;
+	float: left;
 }
+
+.produtos-novos-lancamentos:hover{
+	font-size: 1.1em;
+	border: 2px solid rgb(167, 162, 162);
+}
+
 
 
 .imagem-produtos-lancamentos{
@@ -192,6 +317,8 @@ ul{
 	float: left;
 	width: 30%;
 }
+
+
 
 .inline{
 	display: inline;
@@ -214,5 +341,16 @@ ul{
 
 /*FORMATAÇÃO RODAPÉ*/
 footer{
+	border: 1px solid white;
 	clear: both;
+	height: 200px;
+	background:linear-gradient(#fff,#E0FFFF, #AFEEEE);
+	text-align: center;
+	font-size: 0.5em;
+}
+
+.rodape{
+	margin: 150px;
+	justify-content: center;
+	align-items: center;
 }
